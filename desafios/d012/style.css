@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poetsen+One&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: black;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 40px;
+}
+
+h1{
+    font:normal bolder 7.5vh Poetsen One, Helvetica, sans-serif;
+}
+
+h2{
+    font: normal 100 1em Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+}
+
+strong{
+    font-weight: 600;
+}
+
+section{
+    background-color: white;
+    padding: 20px 0px 20px 10%;
+}
+
+#fundo01{
+    background: darkgreen url(imagens/background001.jpg) left center no-repeat fixed;
+    background-size: cover;
+}
+
+#fundo02{
+    background: gray url(imagens/background002.jpg) left center no-repeat fixed;
+    background-size: cover;
+}
+
+p{
+    margin-top: 3vh;
+    font-family: Caveat;
+    font-size: 5vh;
+    padding: 10px;
+}
+
+p.imagem{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.303);
+    color: white;
+}
+
+footer{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+abbr{
+    text-decoration: none;
+}
+
+a{
+    color: white;
+    text-decoration: underline;
+}
