@@ -5,23 +5,24 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 header{
+    display: block;
+    padding: 40px;
     background-color: black;
     color: white;
-    display: block;
     text-align: center;
-    padding: 40px;
 }
 
 h1{
-    font:normal bolder 7.5vh Poetsen One, Helvetica, sans-serif;
+    font:normal bolder 4vw Poetsen One, Helvetica, sans-serif;
 }
 
 h2{
-    font: normal 100 1em Arial, Helvetica, sans-serif;
     padding-top: 10px;
+    font: normal 100 1.5vw Arial, Helvetica, sans-serif;
 }
 
 strong{
@@ -30,7 +31,7 @@ strong{
 
 section{
     background-color: white;
-    padding: 20px 0px 20px 10%;
+    padding: 20px 10% 20px 10%;
 }
 
 #fundo01{
@@ -45,9 +46,8 @@ section{
 
 p{
     margin-top: 3vh;
-    font-family: Caveat;
-    font-size: 5vh;
     padding: 10px;
+    font-family: Caveat;
 }
 
 p.imagem{
@@ -61,7 +61,6 @@ footer{
     background-color: black;
     color: white;
     text-align: center;
-    font-size: 16px;
 }
 
 abbr{
