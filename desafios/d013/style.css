@@ -48,4 +48,5 @@ section#botoes img:hover {
     transform: translate(-3px, -3px);
     border: 2px solid rgba(255, 255, 255, 0.507);
     box-shadow: 5px 5px 5px black;
+    transition: transform 2s, border 0.5s, box-shadow 2s;
 }
