@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox, Range e Rádio</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        p{
+            padding: 5px;
+        }
+
+        input[value], [placeholder]{
+            padding: 0px 3px 0px 3px;
+        }
+
+        fieldset{
+            border: 2px solid black;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        legend{
+          padding: 0px 5px 0px 5px;
+          margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Checkbox, Range e Rádio</legend>
+        <form action="caixacorreio.html" method="post">
+
+            <h3>Gênero</h3>
+            <p>
+                <input type="radio" name="h" id="im" required>
+                <label for="im">Garota</label><br>
+                <input type="radio" name="h" id="ih" required>
+                <label for="ih">Garoto</label>
+            </p>
+
+            <h3>Esporte de Preferência</h3>
+
+            <p>
+                
+                <input type="checkbox" name="fut" id="ifut">
+                <label for="ifut">Futebol</label><br>
+                <input type="checkbox" name="bas" id="ibas">
+                <label for="ibas">Basquete</label><br>
+                <input type="checkbox" name="vol" id="ivol">
+                <label for="ivol">Vôlei</label><br>
+                <input type="checkbox" name="nat" id="inat">
+                <label for="inat">Natação</label><br>
+                <input type="checkbox" name="nu" id="inu">
+                <label for="inu">Nenhuma das Opções</label>
+            </p>
+
+            <p>
+                <label for="ilevel">Caixa de Satisfação:</label>
+                <input type="range" name="level" id="ilevel" min="0" max="100" value="50" oninput="nivel.innerHTML = Number(level.value)" required>
+                <output name="nivel" id="inivel" >50</output>
+            </p>
+            
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </fieldset>
+</body>
+</html>

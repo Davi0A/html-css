@@ -29,7 +29,7 @@
 <body>
     <fieldset>
         <legend>Primeiro indicio de JavaScript</legend>
-        <form action="caixacorreio.html">
+        <form action="caixacorreio.html" method="post">
             <p>
                 <label for="inumero01">Número 1:</label>
                 <input type="number" name="numero01" id="inumero01" placeholder="Escolha o primeiro número" required oninput="isoma.innerHTML = Number(numero01.value) + Number(numero02.value)"><br>
@@ -47,6 +47,7 @@
 
             <p>
                 <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
             </p>
         </form>
     </fieldset>
