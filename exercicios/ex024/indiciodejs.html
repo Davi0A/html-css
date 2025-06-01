@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indicio do JavaScript</title>
+    <style>
+        
+        
+        fieldset{
+            margin: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        legend{
+            margin-left: 20px;
+        }
+
+        p{
+            margin: 5px;
+        }
+
+        input [value], [placeholder]{
+            padding: 0px 0px 0px 5px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Primeiro indicio de JavaScript</legend>
+        <form action="caixacorreio.html">
+            <p>
+                <label for="inumero01">Número 1:</label>
+                <input type="number" name="numero01" id="inumero01" placeholder="Escolha o primeiro número" required oninput="isoma.innerHTML = Number(numero01.value) + Number(numero02.value)"><br>
+            </p>
+
+            <p>
+                <label for="inumero02">Número 2:</label>
+                <input type="number" name="numero02" id="inumero02" placeholder="Escolha o segundo número" oninput="isoma.innerHTML = Number(numero01.value) + Number(numero02.value)" required>
+            </p>
+            
+            <p>
+                <label for="isoma">Soma:</label>
+                <output name="soma" id="isoma">0</output>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </fieldset>
+</body>
+</html>

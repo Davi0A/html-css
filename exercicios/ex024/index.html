@@ -18,53 +18,73 @@
             padding: 0px 3px 0px 3px;
         }
 
+        fieldset{
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        legend{
+          padding: 0px 5px 0px 5px;
+          margin-left: 20px;
+        }
     </style>
 </head>
 <body>
-    <form action="caixacorreio.html" autocomplete="on" method="post" >
-        <p>
-            <label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome" required placeholder="Nome do usuário">
-        </p>
-
-        <p>
-            <label for="iemail">Email</label>
-            <input type="email" name="email" id="iemail" required placeholder="Seu email">
-        </p>
-
-        <p>
-            <label for="isenha">Senha:</label>
-            <input type="password" name="senha" id="isenha" required placeholder="Crie uma senha" maxlength="15" minlength="8" autocomplete="new-password" size="15">
-        </p>
-
-        <p>
-            <label for="iregiao">Regiao:</label>
-            <input type="text" name="regiao" id="iregiao" required placeholder="Sua região" size="15">
-        </p>
-
-        <p>
-            <label for="iestado">Estado:</label>
-            <input type="text" name="estado" id="iestado" required placeholder="Estado de moradia">
-        </p>
-
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
-
-        <p>
-            <label for="igay">Gay:</label>
-            <select name="gay" id="igay">
-                <optgroup label="Sudeste">
-                    <option value="">Paraná</option>
-                    <option value="">Pernanbuco</option>
-                    <option value="">Alagoas</option>
-                    <option value="">Tocantins</option>
-                    <option value="">Maranhão</option>
-                    <option value="">Bahia</option>
-                </optgroup>
-            </select>
-        </p>
-    </form>
+    <fieldset>
+        <legend>Cadastro</legend>
+        <form action="caixacorreio.html" autocomplete="on" method="post" title="Titulo">
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required placeholder="Nome do usuário">
+            </p>
+            <p>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" required placeholder="Seu email">
+            </p>
+            <p>
+                <label for="isenha">Senha:</label>
+                <input type="password" name="senha" id="isenha" required placeholder="Crie uma senha" maxlength="15" minlength="8" autocomplete="new-password" size="15">
+            </p>
+            <p>
+                <label for="iregiao">Regiao:</label>
+                <input type="text" name="regiao" id="iregiao" required placeholder="Sua região" size="15">
+            </p>
+            <p>
+                <label for="iestado">Estado:</label>
+                <input type="text" name="estado" id="iestado" list="listestado" placeholder="Estado de moradia">
+                <datalist id="listestado">
+                    <optgroup label="Sudeste">
+                        <option value="Sergipe"></option>
+                        <option value="Alagoas"></option>
+                        <option value="Pernambuco"></option>
+                        <option value="Paraíba"></option>
+                        <option value="Rio Grande do Norte"></option>
+                        <option value="Ceará"></option>
+                        <option value="Piauí"></option>
+                        <option value="Maranhão"></option>
+                        <option value="Bahia"></option>
+                    </optgroup>
+                </datalist>
+        
+                <label for="iestad">Estado:</label>
+                <select name="estad" id="iestad">
+                    <optgroup label="Sudeste">
+                        <option value="">Paraná</option>
+                        <option value="">Pernanbuco</option>
+                        <option value="">Alagoas</option>
+                        <option value="">Tocantins</option>
+                        <option value="">Maranhão</option>
+                        <option value="">Bahia</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </fieldset>
 </body>
 </html>
