@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+section{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+main{
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.537);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1{
+    font: normal bold 1.7em Arial, Helvetica, sans-serif;
+}
+
+@media screen and (orientation: portrait) {
+    body{
+        width: 100vw;
+        height: 100vh;
+        background: url(../imagens/back-phone.jpg) center center no-repeat;
+        background-size: cover;
+    }
+
+    img#pc{display: none;}
+    img#phone{display: inline-block;}
+    img#print{display: none;}
+    img#tablet{display: none;}
+    img#tv{display: none;}
+}
+
+@media screen  and (orientation: landscape) {
+    body{
+        background: url(../imagens/back-pc.jpg) center center no-repeat fixed;
+        background-size: cover;
+    }
+
+    img#pc{display: inline-block;}
+    img#phone{display: none;}
+    img#print{display: none;}
+    img#tablet{display: none;}
+    img#tv{display: none;}
+}
