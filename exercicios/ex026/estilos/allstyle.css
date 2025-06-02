@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+section{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+main{
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.537);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1{
+    font: normal bold 1.7em Arial, Helvetica, sans-serif;
+}

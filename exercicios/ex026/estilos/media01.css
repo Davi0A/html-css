@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: url(../imagens/back-phone.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+main > img{
+    
+}
+
+img#pc{display: none;}
+img#phone{display: inline-block;}
+img#print{display: none;}
+img#tablet{display: none;}
+img#tv{display: none;}
