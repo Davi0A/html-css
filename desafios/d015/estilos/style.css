@@ -40,6 +40,8 @@ section {
     border-radius: 20px;
 
     transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s;
+    transition-timing-function: ease;
 }
 
 div#imagem {
@@ -101,7 +103,7 @@ input#enviar {
     display: block;
 
     width: 100%;
-    height: 33px;
+    height: 2em;
     font-size: 1em;
     background-color: var(--corVerde);
     border-radius: 10px;
@@ -119,7 +121,7 @@ a {
     top: 50%;
 
     width: 100%;
-    height: 33px;
+    height: 2em;
     color: var(--corPreta);
     background-color: var(--corVerdeclaro);
     border: 2px solid var(--corPreta);
@@ -141,4 +143,123 @@ i#carta {
     padding: 2px 0px 0px 0px;
     height: 100%;
     font-size: 1.6em;
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px){
+    body, html {
+        background: linear-gradient(to bottom, var(--corPurple), var(--corVerde));
+    }
+    
+    section#cadastro {
+        height: 280px;
+        width: 600px;
+    }
+
+    div#login {
+        float: right;
+        width: 65%;
+        
+    }
+
+    div#imagem{
+        display: inline-block;
+        width: 35%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:992px){
+    body, html {
+        background: linear-gradient(to bottom, var(--corPurple), var(--corVerde));
+    }
+    
+    section#cadastro {
+        width: 700px;
+        height: 340px;
+    }
+
+    div#login {
+        float: left;
+        width: 50%;
+        
+    }
+
+    div#imagem{
+        display: inline-block;
+        background-size: cover;
+        width: 50%;
+        height: 100%;
+    }
+
+    section > div > h1 {
+        font-size: 1.8em;
+    }
+
+    section > div > p {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    body, html {
+        background: linear-gradient(to bottom, var(--corPurple), var(--corVerde));
+    }
+    
+    section#cadastro {
+        width: 900px;
+        height: 360px;
+    }
+
+    div#login {
+        float: right;
+        width: 50%;
+        
+    }
+
+    div#imagem{
+        display: inline-block;
+        background-size: cover;
+        width: 50%;
+        height: 100%;
+    }
+
+    section > div > h1 {
+        font-size: 1.8em;
+    }
+
+    section > div > p {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    body, html {
+        background: linear-gradient(to bottom, var(--corPurple), var(--corVerde));
+    }
+    
+    section#cadastro {
+        width: 70%;
+        height: 360px;
+    }
+
+    div#login {
+        float: right;
+        width: 50%;
+        
+    }
+
+    div#imagem{
+        display: inline-block;
+        background-size: cover;
+        width: 50%;
+        height: 100%;
+    }
+
+    section > div > h1 {
+        font-size: 1.8em;
+    }
+
+    section > div > p {
+        font-size: 1.2em;
+    }
 }
