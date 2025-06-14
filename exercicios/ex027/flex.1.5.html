@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexin box 1.5</title>
+    <style>
+        main{
+            background-color: orange;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 200px;
+        }
+        div.item{
+            background-color: rgb(111, 111, 255);
+            display: inline-block;
+            padding: 10px;
+            border: 2px solid black;
+            text-align: center;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 100px;
+        }
+
+        div#cx1{
+            flex: 0 1 100px;
+        }
+
+        div#cx2{
+            flex: 1 0 100px;
+        }
+
+        div#cx3{
+            flex: 2 0 100px;
+        }
+
+        div#cx4{
+            flex: 0 2 100px;
+        }
+
+        div#cx5{
+            flex: 2 3 100px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="item" id="cx1">A</div>
+        <div class="item" id="cx2">B</div>
+        <div class="item" id="cx3">C</div>
+        <div class="item" id="cx4">D</div>
+        <div class="item" id="cx5">E</div>
+    </main>
+</body>
+</html>
