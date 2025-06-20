@@ -4,43 +4,48 @@
     box-sizing: border-box;
 }
 
+body{
+    height: 97vh;
+}
+
 #container{
     border: 1px solid black;
 
+    height: 100%;
     display: grid;
-    grid-template: repeat(10, 70px) / repeat(9, 1fr);
+    grid-template: 2fr 1fr 7fr 2fr / 3fr 1fr;
 }
 
 #cabeçalho{
     text-align: center;
     border: 1px solid green;
 
-    grid-area: 1 / 1 / 3 / -1;
+    grid-area: 1 / 1 / 2 / -1;
 }
 
 #menu{
     text-align: center;
     border: 1px solid purple;
-    grid-area: 3 / 1 / 4 / -1;
+    grid-area: 2 / 1 / 3 / -1;
 }
 
 #principal{
     text-align: center;
     border: 1px solid blue;
 
-    grid-area: span 6 / span 6;
+    grid-area: 3 / 1 / 4 / -2;
 }
 
 #artigo{
     text-align: center;
     border: 1px solid red;
 
-    grid-area: span 6 / span 3;
+    grid-area: 3 / -2 / 4 / -1;
 }
 
 #rodape{
     text-align: center;
     border: 1px solid orange;
 
-    grid-area: span 1 / span 9;
+    grid-area: 4 / 1 / -1 / -1;
 }
