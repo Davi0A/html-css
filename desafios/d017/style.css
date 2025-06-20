@@ -1,19 +1,26 @@
 @charset "UTF-8";
 
 *{
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
 body{
-    height: 97vh;
+    width: 100vw;
+    height: 100vh;
 }
 
 #container{
     border: 1px solid black;
-
     height: 100%;
+
     display: grid;
-    grid-template: 2fr 1fr 7fr 2fr / 3fr 1fr;
+    grid-template: 100px 80px 1fr 100px / 1fr 200px;
+}
+
+.item{
+    padding: 10px;
 }
 
 #cabeçalho{
@@ -39,6 +46,7 @@ body{
 #artigo{
     text-align: center;
     border: 1px solid red;
+    max-width: ;
 
     grid-area: 3 / -2 / 4 / -1;
 }
